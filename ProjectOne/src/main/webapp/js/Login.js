@@ -12,11 +12,9 @@ function loginUser() {
 	var user = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 	let params = "username="+user+"&password=" + password;
-	console.log(user+"&"+password);
 	let xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
 		if ((this.readyState == 4) & (this.status==200)){
-			console.log(xhr.responseText);
 			if (this.responseText != "null"){
 				let ors = JSON.parse(this.responseText);
 				var email = ors.email
