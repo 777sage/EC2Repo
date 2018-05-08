@@ -45,7 +45,7 @@ function submitRequest(){
 			}
 		}
 	}
-	xhr.open("POST", "http://localhost:8089/ProjectOne/submit.do");
+	xhr.open("POST", "/ProjectOne/submit.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 	let x = document.getElementById("amountBox").value="";
@@ -99,7 +99,7 @@ function getRequests() {
 		}
 		
 	};
-	xhr.open("POST", "http://localhost:8090/ProjectOne/pending.do");
+	xhr.open("POST", "/ProjectOne/pending.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 }
@@ -156,7 +156,7 @@ function getResolvedRequest(){
 		}
 		
 	};
-	xhr.open("POST", "http://localhost:8090/ProjectOne/myResolved.do");
+	xhr.open("POST", "/ProjectOne/myResolved.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 }
@@ -205,7 +205,7 @@ function updateInfo(){
 			}
 		};
 		
-		xhr.open("POST", "http://localhost:8090/ProjectOne/update.do");
+		xhr.open("POST", "/ProjectOne/update.do");
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhr.send(params);
 	}

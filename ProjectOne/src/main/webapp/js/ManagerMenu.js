@@ -102,7 +102,7 @@ function populateWithEmployees() {
 		
 		
 	};
-	xhr.open("POST", "http://localhost:8089/ProjectOne/showAllUsers.do");
+	xhr.open("POST", "/ProjectOne/showAllUsers.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send();
 }
@@ -153,7 +153,7 @@ function populateWithRequests() {
 		}
 		
 	};
-	xhr.open("POST", "http://localhost:8089/ProjectOne/allRequests.do");
+	xhr.open("POST", "/ProjectOne/allRequests.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send();
 	
@@ -245,7 +245,7 @@ function getAllPendingRequests(){
 			}
 		}	
 	};
-	xhr.open("POST", "http://localhost:8089/ProjectOne/allPending.do");
+	xhr.open("POST", "/ProjectOne/allPending.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send();
 }
@@ -274,7 +274,7 @@ function approveRequest(){
 		}
 	};
 	
-	xhr.open("POST", "http://localhost:8089/ProjectOne/respondToRequest.do");
+	xhr.open("POST", "/ProjectOne/respondToRequest.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 	
@@ -326,7 +326,7 @@ function getAllApprovedRequests() {
 		}
 		
 	};
-	xhr.open("POST", "http://localhost:8089/ProjectOne/allResolved.do");
+	xhr.open("POST", "/ProjectOne/allResolved.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send();
 }
@@ -404,7 +404,7 @@ function getEmployeeRequests(){
 		}
 		
 	};
-	xhr.open("POST", "http://localhost:8089/ProjectOne/pending.do");
+	xhr.open("POST", "/ProjectOne/pending.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 }
