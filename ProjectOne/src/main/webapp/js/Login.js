@@ -55,7 +55,7 @@ function loginUser() {
 		}
 	};
 	
-	xhr.open("POST", "http://localhost:8090/ProjectOne/show.do");
+	xhr.open("POST", "http://ec2-34-235-128-92.compute-1.amazonaws.com:8090/show.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 	
