@@ -99,7 +99,7 @@ function getRequests() {
 		}
 		
 	};
-	xhr.open("POST", "http://localhost:8089/ProjectOne/pending.do");
+	xhr.open("POST", "http://localhost:8090/ProjectOne/pending.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 }
@@ -156,7 +156,7 @@ function getResolvedRequest(){
 		}
 		
 	};
-	xhr.open("POST", "http://localhost:8089/ProjectOne/myResolved.do");
+	xhr.open("POST", "http://localhost:8090/ProjectOne/myResolved.do");
 	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhr.send(params);
 }
@@ -205,7 +205,7 @@ function updateInfo(){
 			}
 		};
 		
-		xhr.open("POST", "http://localhost:8089/ProjectOne/update.do");
+		xhr.open("POST", "http://localhost:8090/ProjectOne/update.do");
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 		xhr.send(params);
 	}
