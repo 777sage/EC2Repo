@@ -23,7 +23,7 @@ public class ConnectionUtil {
 		InputStream in = null;
 		try {
 			Properties props = new Properties();
-			in = new FileInputStream("C:\\proj1.properties");
+			in = new FileInputStream("src\\main\\resources\\proj1.properties");
 			props.load(in);
 			return DriverManager.getConnection(props.getProperty("url"), props.getProperty("username" ), props.getProperty("password"));
 		}catch (SQLException sqle) {
