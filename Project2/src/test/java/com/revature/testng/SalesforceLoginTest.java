@@ -40,7 +40,7 @@ public class SalesforceLoginTest {
 	// }
 	@BeforeMethod
 	public void beforeMethod() {
-		options = new ChromeOptions().addArguments("C:\\Users\\Sameer\\AppData\\Local\\Google\\Chrome\\User Data");
+		options = new ChromeOptions().addArguments("C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data");
 		File chrome = new File("src/test/resources/chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 		driver = new ChromeDriver(options);
