@@ -117,9 +117,10 @@ public class SalesforceSettingsTest {
 		sp.changeToSettings(driver);
 		sp.nap(1000);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		sp.ngModels(driver);
-		sp.timelineTrainersPerPageEntryVP(driver);
-		sp.nap(1000);
+		//sp.ngModels(driver);
+		//sp.timelineTrainersPerPageEntryVP(driver);
+		//sp.nap(1000);
+		
 		//check values
 		//get values from page
 		//assert true if they are all equals
